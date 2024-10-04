@@ -24,10 +24,24 @@ body {
     border: 1px solid red;
 }
 
+/* Header */
+header ul li a {
+    padding: 15px 18px;
+    color: white;
+    /* Tolgo la sottolineatura alle ancore */
+    text-decoration: none;
+}
+
+/* tolgo i pallini */
+ul {
+    list-style: none;
+}
+
 /* Larghezza dei container */
 .container {
     max-width: 1200px;
     margin: 0px auto;
+    padding: 15px 0;
 }
 
 .small-container {
@@ -57,6 +71,15 @@ body {
     flex-direction: row-reverse;
 }
 
+.space-between {
+    justify-content: space-between;
+}
+
+/* Allineamento centrato items */
+.align-items {
+    align-items: center;
+}
+
 /* Testi */
 .text-white {
     color: var(--color-light);
@@ -67,6 +90,16 @@ body {
 }
 
 /* Main - Larghezza delle immagini e dei contenuti testuali del main */
+#hero {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    background-image: url('../img/jumbo.png');
+    background-size: cover;
+    height: 600px;
+}
+
 .image {
     width: 60%;
 }
