@@ -6,6 +6,7 @@
     --color-blue: #255EE9;
     --color-violet: #748ADB;
 }
+
 /* Reset */
 * {
     padding: 0;
@@ -20,4 +21,20 @@ body {
 /* Classe di debug */
 .debug {
     border: 1px solid red;
+}
+
+/* Larghezza container */
+.container {
+    max-width: 1200px;
+    margin: 0px auto;
+}
+
+/* Colori di sfondo delle section e del footer */
+.color-light-backgroud {
+    background-color: var(--color-light);
+}
+
+.color-dark-backgroud-footer {
+    background-color: var(--color-dark);
+    color: white;
 }
