@@ -126,6 +126,17 @@ ul {
     width: 100%;
 }
 
+h1 {
+    font-size: 3em;
+}
+h2 {
+    font-size: 3.2em;
+}
+p {
+    font-size: 1.5em;
+    font-weight: 500;
+}
+
 /* footer */
 .footer-up {
     border-bottom: 1px solid var(--color-light);
