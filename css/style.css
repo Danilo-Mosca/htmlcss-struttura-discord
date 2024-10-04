@@ -16,6 +16,7 @@
 
 body {
     font: Whitney, 'Helvetica Neue', Helvetica, Arial, sans-serif;
+    color: var(--color-dark);
 }
 
 /* Classe di debug */
@@ -28,6 +29,7 @@ body {
     max-width: 1200px;
     margin: 0px auto;
 }
+
 .small-container {
     max-width: 800px;
     margin: 0px auto;
@@ -37,22 +39,42 @@ body {
 .color-blue-header-hero {
     background-color: var(--color-blue);
 }
+
 .color-light-backgroud {
     background-color: var(--color-light);
 }
+
 .color-dark-backgroud-footer {
     background-color: var(--color-dark);
-    color: white;
 }
 
-/* Flex */
+/* Flexbox utilizzate */
 .flex-display {
     display: flex;
-    justify-content: space-around;
 }
+
 .row-reverse {
     flex-direction: row-reverse;
 }
+
+/* Testi */
+.text-white {
+    color: var(--color-light);
+}
+
+.text-dark {
+    color: var(--color-dark);
+}
+
+/* Main - Larghezza delle immagini e dei contenuti testuali del main */
+.image {
+    width: 60%;
+}
+
+.content {
+    width: 40%;
+}
+
 /* footer */
 .footer-up {
     border-bottom: 1px solid var(--color-light);
