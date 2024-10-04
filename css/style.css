@@ -23,18 +23,37 @@ body {
     border: 1px solid red;
 }
 
-/* Larghezza container */
+/* Larghezza dei container */
 .container {
     max-width: 1200px;
     margin: 0px auto;
 }
+.small-container {
+    max-width: 800px;
+    margin: 0px auto;
+}
 
-/* Colori di sfondo delle section e del footer */
+/* Colori di sfondo delle section dell'header e del footer */
+.color-blue-header-hero {
+    background-color: var(--color-blue);
+}
 .color-light-backgroud {
     background-color: var(--color-light);
 }
-
 .color-dark-backgroud-footer {
     background-color: var(--color-dark);
     color: white;
+}
+
+/* Flex */
+.flex-display {
+    display: flex;
+    justify-content: space-around;
+}
+.row-reverse {
+    flex-direction: row-reverse;
+}
+/* footer */
+.footer-up {
+    border-bottom: 1px solid var(--color-light);
 }
