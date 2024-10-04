@@ -1,6 +1,11 @@
 /* Generals */
 /* Palette colori */
-
+:root {
+    --color-light: #F6F6F6;
+    --color-dark: #23272A;
+    --color-blue: #255EE9;
+    --color-violet: #748ADB;
+}
 /* Reset */
 * {
     padding: 0;
@@ -11,4 +16,9 @@
 body {
     font: Whitney, 'Helvetica Neue', Helvetica, Arial, sans-serif;
 
+}
+
+/* Classe di debug */
+.debug {
+    border: 1px solid red;
 }
