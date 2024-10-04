@@ -80,6 +80,10 @@ ul {
     align-items: center;
 }
 
+.flex-column {
+    flex-direction: column;
+}
+
 /* Testi */
 .text-white {
     color: var(--color-light);
@@ -87,6 +91,10 @@ ul {
 
 .text-dark {
     color: var(--color-dark);
+}
+
+.text-align-center {
+    text-align: center;
 }
 
 /* Main - Larghezza delle immagini e dei contenuti testuali del main */
@@ -97,15 +105,25 @@ ul {
     text-align: center;
     background-image: url('../img/jumbo.png');
     background-size: cover;
-    height: 600px;
+    height: 500px;
 }
 
 .image {
     width: 60%;
 }
 
+/* Imposto tutte le immagini nella classe image come immagini fluide, assegnandogli il width: 100% in modo da non mandarle in overflow */
+.image img {
+    width: 100%;
+}
+
 .content {
     width: 40%;
+}
+
+/* Immagine per sezione tecnology */
+.image-full img {
+    width: 100%;
 }
 
 /* footer */
