@@ -20,9 +20,9 @@ body {
 }
 
 /* Classe di debug */
-.debug {
+/* .debug {
     border: 1px solid red;
-}
+} */
 
 /* Header */
 header ul li a {
@@ -45,6 +45,7 @@ ul {
 }
 
 .small-container {
+    color: var(--color-light);
     max-width: 800px;
     margin: 0px auto;
 }
@@ -82,6 +83,25 @@ ul {
 
 .flex-column {
     flex-direction: column;
+    text-align: center;
+}
+
+.social {
+    display: flex;
+    flex-direction: column;
+    justify-content:flex-start;
+    align-items: baseline;
+}
+/* div contenente sia la bandiera che il testo "italiano" */
+.language {
+    display: flex;
+    gap: 5px;
+    line-height: 18px;
+    padding: 20px 0px;
+}
+/* Classe che contien l'immagine della bandiera */
+.italy-flag {
+    width: 20%;
 }
 
 /* Testi */
@@ -93,10 +113,6 @@ ul {
     color: var(--color-dark);
 }
 
-.text-align-center {
-    text-align: center;
-}
-
 /* Main - Larghezza delle immagini e dei contenuti testuali del main */
 #hero {
     display: flex;
@@ -106,6 +122,11 @@ ul {
     background-image: url('../img/jumbo.png');
     background-size: cover;
     height: 500px;
+    margin-bottom: 60px;
+}
+
+#call-to-action {
+    padding-bottom: 80px;
 }
 
 .image {
@@ -119,6 +140,7 @@ ul {
 
 .content {
     width: 40%;
+    padding-top: 30px;
 }
 
 /* Immagine per sezione tecnology */
@@ -129,15 +151,120 @@ ul {
 h1 {
     font-size: 3em;
 }
+
 h2 {
     font-size: 3.2em;
 }
+
+h3 {
+    font-size: 2.3em;
+}
+
+h1,
+h2,
+h3 {
+    padding-bottom: 0.5em;
+}
+
 p {
     font-size: 1.5em;
     font-weight: 500;
 }
 
+.h3-stars {
+    background-image: url('../img/stars.svg');
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: top;
+    padding: 30px 50px;
+}
+
 /* footer */
 .footer-up {
-    border-bottom: 1px solid var(--color-light);
+    font-size: 18px;
+    padding-top: 50px;
+    border-bottom: 1px solid var(--color-violet);
+}
+.footer-up li:first-of-type, .footer-up h4:first-of-type {
+    color: var(--color-violet);
+}
+.footer-up h4:first-of-type {
+    font-size: 32px;
+}
+/* Distanzio le voci del menu nel footer */
+.footer-up ul, .footer-up .social {
+    line-height: 40px;
+}
+.footer-down {
+    padding-bottom: 50px;
+}
+
+span i {
+    width: 50px;
+}
+
+/* Pulsanti */
+button {
+    color: var(--color-light);
+    background-color: var(--color-violet);
+    text-align: center;
+    line-height: 30px;
+    padding: 12px 18px;
+    border-radius: 25px;
+    border: 0px;
+    font-size: 1.2em;
+    font-weight: 500;
+}
+
+#button-header {
+    color: var(--color-dark);
+    background-color: var(--color-light);
+    line-height: 10px;
+    font-size: 1em;
+}
+
+#button-hero-left {
+    color: var(--color-dark);
+    background-color: var(--color-light);
+}
+
+#button-hero-right {
+    color: var(--color-light);
+    background-color: var(--color-dark);
+}
+
+#button-footer {
+    line-height: 10px;
+    font-size: 1em;
+    padding: 12px 12px;
+}
+
+.button-hero {
+    display:flex;
+    justify-content: center;
+    gap: 20px;
+    padding: 15px;
+}
+
+/* Configurazioni classi dell'immagine vettoriale della wave (onda)  */
+.wave-up .wavePath-haxJK1 {
+    fill: var(--color-light);
+}
+
+.wave-up .wave-1hkxOo {
+    margin-bottom: 100px;
+    /* Volendo posso anche impostare un altezza o largezza
+    height: 150px;
+    width: 80%;
+    --------------------------------------------------- */
+    background-color: white;
+}
+
+.wave-down .wavePath-haxJK1 {
+    fill: white;
+}
+
+.wave-down .wave-1hkxOo {
+    padding-top: 100px;
+    background-color: var(--color-light);
 }
